@@ -1,0 +1,7 @@
+app:
+  version: 1.0
+  name: online-car
+
+spring:
+  profiles:
+    active: dev

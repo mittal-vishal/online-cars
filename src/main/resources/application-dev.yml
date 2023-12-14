@@ -1,0 +1,16 @@
+#Possible values for environmentName: local, dev, staging, preprod, production
+environmentName: dev
+
+server:
+  port: 8080
+  host: localhost
+  servlet:
+    contextPath: /online-car
+
+resilience4j:
+  retry:
+    instances:
+      onlineCar:
+        maxAttempts: 5
+        waitDuration: 2s
+
